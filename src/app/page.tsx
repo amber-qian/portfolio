@@ -143,12 +143,33 @@ export default function Home() {
           I&apos;m interested in software development,
           data solutions, and building useful applications.
         </p>
-        <a
-          className="button button-primary"
-          href="mailto:qian.amber@hotmail.com"
-        >
-          Get in touch ↗
-        </a>
+
+        <div className="social-links">
+          <a
+            href="https://www.linkedin.com/in/amberqian/"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+            href="https://github.com/amber-qian"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            GitHub ↗
+          </a>
+          <a
+            href="mailto:qian.amber@hotmail.com"
+            className="social-link"
+          >
+            Get in touch ↗
+          </a>
+        </div>
+
       </section>
 
       <footer className="site-footer">
