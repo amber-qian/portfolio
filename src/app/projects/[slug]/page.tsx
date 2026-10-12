@@ -67,6 +67,21 @@ export default async function ProjectPage({
          </ul>
         </section>
 
+        <section className="detail-section">
+          <h2>Architecture</h2>
+          <p>{project.architecture}</p>
+        </section>
+
+        <section className="detail-section">
+          <h2>Technical challenges</h2>
+          <ul className="project-highlights">
+            {project.challenges.map((challenge) => (
+              <li key={challenge}>{challenge}</li>
+            ))}
+          </ul>
+        </section>
+
+
 
         <section className="detail-section">
         <h2>Development history</h2>

@@ -5,6 +5,8 @@ export type Project = {
   description: string;
   overview: string;
   highlights: string[];
+  architecture: string;
+  challenges: string[];
   technologies: string[];
   category: "Web Application" | "API" | "Data";
   githubUrl?: string;
@@ -26,6 +28,14 @@ export const projects: Project[] = [
       "Developed backend APIs and business logic.",
       "Built administrative features for users, clients, products, and subscriptions.",
     ],
+    architecture:
+      "The platform combined a Django backend, React-based interfaces, and Azure Active Directory integration. Backend APIs handled application business logic and authentication-related workflows.",
+
+    challenges: [
+      "Supporting authentication and token authorization across web applications.",
+      "Integrating single sign-on with Azure Active Directory.",
+      "Managing users, clients, products, and subscriptions through administrative tools.",
+    ],
     technologies: ["Python", "Django", "React", "Azure AD"],
     category: "Web Application",
     featured: true,
@@ -42,6 +52,14 @@ export const projects: Project[] = [
       "Worked with database procedures and SQL scripts.",
       "Supported SOAP-based services and related data retrieval workflows.",
     ],
+    architecture:
+      "The services used C# and .NET Core to expose calculated data through REST APIs, with SQL and database procedures supporting data access and processing.",
+
+    challenges: [
+      "Implementing API endpoints for calculated data.",
+      "Integrating application logic with database procedures.",
+      "Supporting existing SOAP-based services and related data retrieval workflows.",
+    ],
     technologies: ["C#", ".NET Core", "REST APIs", "SQL Server"],
     category: "API",
     featured: true,
@@ -57,6 +75,14 @@ export const projects: Project[] = [
       "Developed data migration and transformation solutions.",
       "Created supporting applications using C# and VBA.",
       "Worked with database upgrades and reporting requirements.",
+    ],
+    architecture:
+      "The solutions combined C# and VBA applications with SQL-based data preparation and transformation workflows to support enterprise data migration and application upgrades.",
+
+    challenges: [
+      "Transforming legacy data to meet the requirements of upgraded systems.",
+      "Maintaining data consistency during migration.",
+      "Supporting reporting and application workflows after data changes.",
     ],
     technologies: ["C#", "SQL", "VBA", "Database Migration"],
     category: "Data",
