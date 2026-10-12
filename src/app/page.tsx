@@ -77,6 +77,54 @@ export default function Home() {
         </p>
       </section>
 
+
+      <section id="about" className="about-section">
+        <div className="section-container">
+          <p className="eyebrow">ABOUT ME</p>
+          <h2>Building reliable software and data solutions</h2>
+
+          <div className="about-content">
+            <div className="about-text">
+              <p>
+                I&apos;m a Full Stack Software Developer with over
+                10 years of experience designing, developing, and
+                supporting enterprise applications.
+              </p>
+
+              <p>
+                My background includes C#, .NET, Python, JavaScript,
+                SQL Server, Oracle, REST APIs, database development,
+                and system integrations.
+              </p>
+
+              <p>
+                I enjoy solving technical problems, improving existing
+                systems, and building applications that help people
+                work more efficiently.
+              </p>
+            </div>
+
+            <div className="about-highlights">
+              <div className="about-highlight">
+                <strong>10+ Years</strong>
+                <span>Software Development Experience</span>
+              </div>
+
+              <div className="about-highlight">
+                <strong>Full Stack</strong>
+                <span>Web Applications &amp; APIs</span>
+              </div>
+
+              <div className="about-highlight">
+                <strong>Data</strong>
+                <span>SQL, Integration &amp; Migration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section className="skills-section" id="about">
         <div className="section-heading">
           <p className="eyebrow">MY TOOLKIT</p>
