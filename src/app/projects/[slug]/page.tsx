@@ -1,4 +1,4 @@
-
+import type {Metadata} from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
@@ -8,6 +8,28 @@ export const instant = false;
 type ProjectPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateMetadata({
+  params,
+}: ProjectPageProps): Promise<Metadata> {
+  const { slug } = await params;
+
+  const project = projects.find(
+    (item) => item.slug === slug
+  );
+
+  if (!project) {
+    return {
+      title: "Project Not Found",
+    };
+  }
+
+  return {
+    title: project.title,
+    description: project.description,
+  };
+}
+
 
 export function generateStaticParams() {
   return projects.map((project) => ({
