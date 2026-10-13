@@ -22,8 +22,8 @@ export default function Home() {
         </a>
 
         <nav aria-label="Main navigation">
-          <a href="#projects">Projects</a>
           <a href="#about">About</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
           <a
             href="/Amber-Qian-Resume.pdf"
@@ -35,9 +35,6 @@ export default function Home() {
           </a>
         </nav>
 
-        <a className="header-link" href="#projects">
-          Explore my work ↗
-        </a>
       </header>
 
       <section className="hero">
