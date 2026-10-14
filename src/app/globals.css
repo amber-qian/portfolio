@@ -619,3 +619,34 @@ nav[aria-label="Main navigation"] > a:not(.nav-resume):hover {
     gap: 28px;
   }
 }
+
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+  .site-header {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px 20px;
+  }
+
+  nav[aria-label="Main navigation"] {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+    width: 100%;
+  }
+
+  nav[aria-label="Main navigation"] > a {
+    font-size: 13px;
+  }
+
+  .nav-resume {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav[aria-label="Main navigation"] {
+    gap: 10px 14px;
+  }
+}
